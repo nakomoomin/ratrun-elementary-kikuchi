@@ -1,86 +1,272 @@
-element.style {
+body {
+  margin: 0;
 }
 .my-port-folio {
-    min-width: 380px;
+  min-width: 380px;
 }
-*, :after, :before {
-    box-sizing: border-box;
+header {
+  position: fixed;
+  display: flex;
+  color: white;
+  background: #ce5230;
+  width: 100%;
+  align-items: center;
+  padding: 30px 0;
+  z-index: 10;
 }
-div {
-    display: block;
+.header-left {
+  padding-left: 20px;
+  width: 30%;
+  font-family: "Comic Sans MS";
 }
-body {
-    font-family: "Noto Sans JP",sans-serif;
-    color: #2c3e50;
+.header-left > h1 {
+  font-size: 24px;
 }
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
+.header-right {
+  padding-right: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+a {
+  color: white;
 }
-<style>
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+.top {
+  background: #ce5230;
+  width: 100%;
+  padding: 70px 50px;
+  text-align: center;
+  border-bottom: 4px solid #807f7d;
 }
-header { 
-    display: flex;
-    background: #ce5230;
-    color: white;
-    align-items: center;
-  }
-  .header-left {
-    padding-left: 20px;
-    width: 30%;
-    font-family: "Comic Sans MS";
+.top > img {
+  padding-top: 30px;
+  width: 40%;
+}
+.top > p {
+  color: white;
+  font-family: "Comic Sans MS";
+  font-size: 22px;
+}
+.about-me {
+  background: #dad2c5;
+  display: flex;
+  border-bottom: 4px solid #807f7d;
+}
+.about-me-left {
+  width: 50%;
+  text-align: center;
+}
+.about-me-left > img {
+  height: 600px;
+  padding: 50px;
+}
+.about-me-right {
+  width: 50%;
+  text-align: center;
+}
+.my-port-folio > h2 {
+  font-family: "Comic Sans MS";
+  color: #ce5230;
+}
+.about-me-right > h2 {
+  padding: 50px;
+}
+.profile {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+  border: 4px solid #807f7d;
+  background: #ce5230;
+  color: white;
+  line-height: 2em;
+  display: block;
+  text-align: left;
+}
+th {
+  width: 120px;
+}
+
+.interest {
+  display: flex;
+  background: #dad2c5;
+  padding: 50px;
+  border-bottom: 4px solid #807f7d;
+}
+.interest-child {
+  width: 33%;
+  padding: 0 20px;
+  text-align: center;
+  color: #2d2d2d;
+}
+.interest-child > h3 {
+  color: #ce5230;
+  padding-bottom: 30px;
+}
+.interest-child > p {
+  text-align: left;
+}
+.interest-child > img {
+  width: 300px;
+}
+
+.career {
+  background: #dad2c5;
+  padding: 50px;
+  display: flex;
+  border-bottom: 4px solid #807f7d;
+}
+.time-line {
+  background-image: url(./img/time-tree.png);
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 600px;
+  position: relative;
+}
+.high-school {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  margin-left: -220px;
+  color: #fe5e6f;
+  font-weight: bold;
+}
+.university {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: 120px;
+  color: #08a68e;
+}
+.job {
+  position: absolute;
+  top: 425px;
+  left: 50%;
+  margin-left: -220px;
+  color: #93b7c8;
+}
+.ratrun-school {
+  position: absolute;
+  top: 620px;
+  left: 50%;
+  margin-left: 120px;
+  color: #285b6d;
+}
+.career-image-area {
+  text-align: center;
+}
+.career-image {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+}
+
+.my-port-folio > footer {
+  background: #ce5230;
+  color: white;
+  padding: 20px;
+  display: flex;
+  font-family: "Comic Sans MS";
+  width: 100%;
+}
+.footer-left {
+  width: 60%;
+  padding-right: 20px;
+}
+.footer-left > .copy-right {
+  font-size: 12px;
+}
+.footer-right {
+  width: 40%;
+  text-align: right;
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 10px 0;
+    justify-content: flex-start;
   }
   .header-left > h1 {
-    font-size: 24px;
+    font-size: 16px;
   }
   .header-right {
-    padding-right: 40px;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .top {
+    padding: 200px 50px;
+  }
+  .top > img {
+    padding-top: 30px;
     width: 70%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
   }
-  a {
-    color: white;
+  .top > p {
+    font-size: 18px;
   }
+  .about-me {
+    display: block;
+  }
+  .about-me-left {
+    width: 100%;
+    text-align: center;
+  }
+  .about-me-left > img {
+    height: 400px;
+    padding: 50px;
+  }
+  .about-me-right {
+    width: 100%;
+  }
+  .about-me-right > h2 {
+    padding: 50px 20px;
+  }
+  .profile {
+    width: 100%;
+    border: none;
+    margin-bottom: 50px;
+    background: #dad2c5;
+    color: #ce5230;
+  }
+
+  .interest {
+    display: block;
+  }
+  .interest-child {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .career {
+    padding: 50px 0px;
+    display: block;
+  }
+  .career > h2 {
+    padding: 0px 50px;
+  }
+  .time-line {
+    background-size: 650px 650px;
+    background-position: cover;
+    width: 100%;
+    height: 600px;
+    font-size: 12px;
+  }
+  .high-school {
+    top: 30px;
+    margin-left: -175px;
+  }
+  .university {
+    top: 180px;
+    margin-left: 105px;
+  }
+  .job {
+    top: 325px;
+    margin-left: -175px;
+  }
+  .ratrun-school {
+    top: 480px;
+    margin-left: 105px;
+  }
+}
